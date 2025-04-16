@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>{% if form.instance.pk %}Edit Task{% else %}Add Task{% endif %}</h2>
+  <h2>{% if form.instance.pk %}Edit Tag{% else %}Add Tag{% endif %}</h2>
   <form method="post" novalidate>
     {% csrf_token %}
     {{ form.as_p }}
