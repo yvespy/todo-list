@@ -59,3 +59,4 @@ class TagUpdateView(UpdateView):
 class TagDeleteView(DeleteView):
     model = Tag
     template_name = "tasks/tag_confirm_delete.html"
+    success_url = reverse_lazy("tag_list")
